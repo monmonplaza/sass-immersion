@@ -1,0 +1,24 @@
+@use "../abstract" as *;
+.header {
+  padding: 2rem 0;
+  &__wrapper {
+    @include flex(space-between, center);
+  }
+
+  nav ul {
+    @include flex;
+    li {
+      a {
+        color: $clr-light;
+      }
+    }
+  }
+
+  .branding__header {
+    width: 4rem;
+    height: 4rem;
+    @include flex(center, center);
+    background-color: $clr-accent;
+    color: $clr-light;
+  }
+}

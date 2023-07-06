@@ -1,0 +1,15 @@
+@use "../abstract" as *;
+
+.btn {
+  min-width: 20rem;
+  text-align: center;
+  padding: 1.6rem 2.2rem;
+  transition: 0.5s ease;
+  &-accent {
+    background-color: $clr-accent;
+    color: $clr-light;
+    &:hover {
+      background-color: darken($clr-accent, 10);
+    }
+  }
+}
