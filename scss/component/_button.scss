@@ -1,11 +1,12 @@
 @use "../abstract" as *;
 
 .btn {
-  min-width: 20rem;
+  min-width: 15rem;
   text-align: center;
-  padding: 1.6rem 2.2rem;
+  padding: 1.2rem 1.6rem;
   transition: 0.5s ease;
-  &-accent {
+  display: inline-block;
+  &--accent {
     background-color: $clr-accent;
     color: $clr-light;
     &:hover {

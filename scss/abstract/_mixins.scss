@@ -28,3 +28,17 @@
     @content;
   }
 }
+
+@mixin background($url: '1.jpg') {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+$tint:rgba(0,0,0,0.3), rgba(0,0,0,0.3);
+
+@mixin backgroundTinted($url: '1.jpg',  $tint: (rgba(0,0,0,0.2), rgba(0,0,0,0.2))  ) {
+  background-image: linear-gradient($tint), url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
